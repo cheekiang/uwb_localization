@@ -1,0 +1,16 @@
+<launch>  
+    <arg name="map_file" default="$(find uwb_localization)/maps/map.yaml"/>
+    <node pkg="map_server" name="map_server"  type="map_server" args="$(arg map_file)" />
+  
+    <include file="$(find uwb_localization)/launch/tf.launch" />
+
+    <node pkg="uwb_localization" name="uwb_localization"  type="localize.py" output="screen">
+        <param name="serial_port" value="/dev/ttyUSB0" />
+        <param name="min_anchor" value="2" />
+        <param name="min_range" value="0.1" />
+        <param name="max_range" value="10.1" />
+        <param name="frame_id" value="tag_link" />
+    </node>
+</launch>
+  
+  
