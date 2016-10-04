@@ -77,7 +77,7 @@ Tag's frame_id when transform's published from map to tag.
 
 #####min_anchor(default: 3)
 The mininum number of anchors the system must find before performing trilateration between anchors. Increase this if you want to improve the accuracy
-in the expense of computational cost.
+at the expense of computational cost.
 
 #####min_range(default: 0.5)
 The minimum probable distance from an anchor to a tag to prevent false reading. For example, if your anchor is hanging 1 m away from 
