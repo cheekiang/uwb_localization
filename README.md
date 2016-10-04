@@ -3,6 +3,8 @@
 Indoor/Outdoor Positioning System framework based on Decawave's DWM1000 Ultra Wide Band transceivers. 
 The whole system was tested indoors with 3 anchors and 1 tag. Technically this should work outdoors as well.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BuBnmrkJ9BY" frameborder="0" allowfullscreen></iframe>
+
 ###Hardware
 Both anchors and tags use the same circuit board. The board houses the UWB transceiver, an Arduino Pro Mini 3.3V and a built-in USB 
 Male so you can plug it straight to a power bank and deploy the anchors remotely.
