@@ -32,10 +32,12 @@ anchor codes to have unique address per anchor from:
 4. Save DW1000Ranging.cpp and upload the codes from /hardware/arduino to your tag and anchors.
 
 ###Installation
-1. Install Localization package https://github.com/kamalshadi/Localization
+1. Install dependencies
 
     ```sh
     $ pip install localization
+    $ pip install scipy
+    $ pip install shapely
     ```
 
 2. Install map_server
